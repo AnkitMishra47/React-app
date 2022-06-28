@@ -27,7 +27,7 @@ setTimeout(() => {
 }, 1500);
 }
 
-const ToggleMode = ()=>{
+const ToggleMode = (cls)=>{
   if(darkMode === 'light'){
     setdarkMode('dark');
     document.body.style.backgroundColor = '#042743';

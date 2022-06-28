@@ -33,11 +33,10 @@ export default function TextForm(props) {
         setText(event.target.value); 
     }
 
-    const handleCopy = (event)=>{
-      let text = document.getElementById('myBox');
-      text.select() ;
-      navigator.clipboard.writeText(text.value);
-      document.getSelection().removeAllRanges();
+    const handleCopy = ()=>{
+    
+      navigator.clipboard.writeText(Text);
+     
      
       props.showAlert("All text has been copied tot your clipboard", "success");
       
@@ -77,7 +76,7 @@ k          style ={{backgroundColor : `${props.mode === 'light'? 'white' : '#2b4
     </div>   
     <div className={`conatiner my-3 text-${props.mode === 'light'? 'dark' : 'light'}`}>
     <span className = "dark">Your summary of text is </span>
-    <span className = "dark-1">{Text.split(" ").filter((element)=>{return element.length !== 0}).length} words and {Text.length - Text.split(" ").length +1} characters.</span>
+    <span className = "dark-1">{Text.split(/\s+/).filter((element)=>{return element.length !== 0}).length} words and {Text.length - Text.split(" ").length +1} characters.</span>
     </div>
     </>
   );
