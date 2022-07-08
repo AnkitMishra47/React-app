@@ -31,7 +31,7 @@ export default function About(props) {
     </h2>
     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <strong>Free To Use</strong> Text Utils is a free characters counting web application which basically counts the characters and and word count statistics for word count. Text Utils report the number of word and characters to the users. Thuns this is suitable for writing text while keeping the word limit in check.
+        <strong>Free To Use</strong> Text Utils is a free characters counting web application which basically counts the characters and and word count statistics and word count. Text Utils report the number of word and characters to the users. Thuns this is suitable for writing text while keeping the word limit in check.
         User can also manipulates the text in various ways like they can copy text, clearing the text and convert it to differnt cases.
       </div>
     </div>
